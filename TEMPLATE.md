@@ -1,4 +1,4 @@
-# vApp Submission:submissions/infrastructure/TorikBh.md
+# vApp Submission:infrastructure/TorikBh.md
 ## Verification
 ```yaml
 github_username: "TorikBh"
