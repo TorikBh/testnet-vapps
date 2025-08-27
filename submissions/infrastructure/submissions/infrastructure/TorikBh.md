@@ -1,63 +1,79 @@
 
-# vApp Proposal - Infrastructure (Tools, Analytics, Monitoring)
+# vApp Submission:infrastructure/TorikBh.md
+## Verification
+```yaml
+github_username: "TorikBh"
+discord_id: "874265129380892713"
+timestamp: "2025-01-15"
+```
 
-## Project Name
-ChainPulse
+## Developer
+- **Name**: ozan
+- **GitHub**: @TorikBh
+- **Discord**: ozanmaning
+- **Experience**: Web3 developer with focus on decentralized infrastructure, monitoring, and analytics tools. Experienced in building Node.js backends, React frontends, and blockchain integrations.
 
-## Category
-infrastructure - Tools, analytics, monitoring
+## Project
 
-## GitHub Username
-TorikBh
+### Name & Category
+- **Project**: ChainPulse
+- **Category**: infrastructure
 
-## Discord ID
-874265129380892713
+### Description
+ChainPulse is an analytics and monitoring platform for decentralized applications and smart contracts. It solves the problem of limited visibility into on-chain activity, node health, and transaction reliability.  
+With ChainPulse, developers and operators can track performance, detect anomalies, and receive alerts in real-time, making it easier to maintain secure and efficient Web3 services.
 
-## Overview
-ChainPulse is a monitoring and analytics tool designed to provide real-time visibility into decentralized applications and smart contracts. It helps developers and operators track performance, detect anomalies, and ensure reliability of Web3 services.
+### SL Integration
+ChainPulse will use Soundness Layer (SL) for:  
+- **Secure Logging**: Storing transaction logs and monitoring data with verifiable integrity.  
+- **Decentralized Data Anchoring**: Ensuring analytics cannot be tampered with.  
+- **Alert Reliability**: SL-backed guarantees that alerts reflect true on-chain events.
 
-## Problem Statement
-Developers and teams often lack accessible tools to monitor blockchain events, transaction throughput, error rates, and user interactions in real-time. Existing solutions are either too complex, centralized, or expensive. This makes it difficult for small teams to maintain performance and security of their decentralized apps.
+## Technical
 
-## Proposed Solution
-ChainPulse will provide:
-- **Transaction Analytics**: Track on-chain activity, transaction volume, gas usage, and failure rates.  
-- **Smart Contract Monitoring**: Real-time event logging with customizable alerts (Slack/Discord integration).  
-- **Infrastructure Health**: Node performance, latency, and uptime monitoring.  
-- **Developer Dashboard**: Visual reports with charts, metrics, and anomaly detection.  
+### Architecture
+- **Data Layer**: Blockchain event listeners subscribe to smart contracts and nodes.  
+- **Processing Layer**: Node.js backend aggregates, filters, and stores data.  
+- **Storage Layer**: PostgreSQL for structured data, Redis for caching, SL for secure logs.  
+- **UI Layer**: React dashboard visualizing metrics, alerts, and reports.  
+- **Integration Layer**: Discord/Slack bots for real-time notifications.
 
-The tool will integrate with SL for secure logging and decentralized data integrity.
+### Stack
+- **Frontend**: React + TailwindCSS  
+- **Backend**: Node.js (Express)  
+- **Blockchain**: SL + Ethereum-compatible chains  
+- **Storage**: PostgreSQL, Redis, SL, optional IPFS for reports  
 
-## Technical Architecture
-- **Frontend**: React + Tailwind (dashboard UI).  
-- **Backend**: Node.js + Express for API services.  
-- **Database**: PostgreSQL for structured data, Redis for caching.  
-- **Blockchain Integration**: Web3.js / ethers.js for event subscriptions.  
-- **SL Integration**: Store logs/metrics with SL for verifiable analytics.  
-- **Deployment**: Dockerized microservices, deployable on cloud or VPS.  
+### Features
+1. Real-time transaction analytics (throughput, gas usage, failure rates)  
+2. Smart contract monitoring with event subscriptions and alerts  
+3. Node and infrastructure health tracking (latency, uptime, performance)  
+4. Customizable dashboard with charts and anomaly detection  
+5. Integration with Discord/Slack for developer notifications  
 
-## Development Timeline
-**Week 1-2**:  
-- Set up project structure, GitHub repo, and CI/CD pipeline.  
-- Implement blockchain event listener & basic API endpoints.  
+## Timeline
 
-**Week 3-4**:  
-- Build frontend dashboard with charts and metrics.  
-- Add smart contract monitoring & alert system.  
+### PoC (2-4 weeks)
+- [ ] Implement blockchain event listener & logging  
+- [ ] Basic integration with SL for secure data storage  
+- [ ] Simple dashboard showing real-time metrics  
 
-**Week 5-6**:  
-- Integrate SL for secure log storage.  
-- Implement anomaly detection and reporting.  
+### MVP (4-8 weeks)
+- [ ] Add anomaly detection and advanced analytics  
+- [ ] Implement full monitoring dashboard with charts and alerts  
+- [ ] Production deployment on VPS/cloud with user testing  
 
-**Week 7**:  
-- Internal testing and bug fixes.  
-- Deploy on testnet environment.  
+## Innovation
+Most monitoring tools are centralized or built for enterprise use. ChainPulse focuses on **open-source, developer-friendly, and decentralized-first monitoring**. By anchoring logs and metrics into the Soundness Layer, it ensures transparency, verifiability, and trust — features that traditional monitoring tools lack.
 
-**Week 8**:  
-- Public beta release with community feedback loop.  
+## Contact
+- **Preferred**: Discord (@ozanmaning)  
+- Updates will be shared via GitHub repo and project’s Discord community.
 
-## Team
-Solo developer (initial stage). Open to collaboration with contributors from the community.
 
-## Expected Outcome
-A developer-friendly, open-source monitoring platform that improves transparency, reliability, and performance for decentralized apps.
+
+**Checklist before submitting:**
+- [ ] All fields completed
+- [ ] GitHub username matches PR author  
+- [ ] SL integration explained
+- [ ] Timeline is realistic
